@@ -120,7 +120,7 @@ Data <- Data %>% mutate(Bin.no = case_when(ENMO <  iOutput[1,5] ~ '2.5',
                                            ENMO >= iOutput[57,5] & ENMO < iOutput[58,5] ~ '287.5',
                                            ENMO >= iOutput[58,5] & ENMO < iOutput[59,5] ~ '292.5',
                                            ENMO >= iOutput[59,5] & ENMO < iOutput[60,5] ~ '297.5',
-                                           ENMO >= iOutput[60,5] ~ '300plus')) 
+                                           ENMO >= iOutput[60,5] ~ '302.5')) 
 # Aggregate by day and category 
   i <- aggregate(ENMO ~ Date + Bin.no, Data, length)  
 
