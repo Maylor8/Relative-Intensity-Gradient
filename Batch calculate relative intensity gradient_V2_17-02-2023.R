@@ -93,7 +93,7 @@ Data <- Data %>% mutate(Bin.no = case_when(ENMO <  iOutput[1,5] ~ '2.5',
                                            ENMO >= iOutput[60,5] ~ '302.5')) 
 # Aggregate by day and category 
   i <- aggregate(ENMO ~ Date + Bin.no, Data, length)  
-  i$ENMO <- (i$ENMO * epochsize) / 60 # Converts the number of epochs to time, as is done in GGIR (function g.intenstiygradient)
+  i$ENMO <- (i$ENMO * epochsize) / 60 # Converts the number of epochs to time, as is done in GGIR (function g.intensitygradient)
 
 # Natural log of the data
   i$Binlog <- log(as.numeric(i$Bin.no))
