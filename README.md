@@ -1,4 +1,9 @@
 # Relative-Intensity-Gradient
-Generation of relative intensity gradients
+Generation of relative intensity gradients per day
 
-For demonstration of potential of quantifying relative intensity of physical activity as well as absolute intensity, see....[Pending publication details]
+Please acknowledge the use of this code and the efforts of the author appropriately by citing both of the below:
+- Rowlands
+- Github 
+
+
+
